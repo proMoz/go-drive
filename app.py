@@ -15,7 +15,7 @@ else:
     print("no file seletecd with -f \n uploading all files in folder filles if exsite")
     files = os.listdir(files_path)
     for file in files:
-        print(os.path.join(files_path, file))
-        upload_file(file, "1nNosPm3SFXWEjv4Vxlv65XS0sxwbOcaN")
+        file_path = os.path.join(files_path, file)
+        upload_file(file_path, "1nNosPm3SFXWEjv4Vxlv65XS0sxwbOcaN")
 
 
