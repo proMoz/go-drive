@@ -10,12 +10,12 @@ if("-f" in args):
     for i in range( file_indx , len(args) ):
         file = os.path.join(main_path, os.path.normpath(args[i]))
         print(file)
-        # upload_file(file, "1nNosPm3SFXWEjv4Vxlv65XS0sxwbOcaN")
+        upload_file(file, "1nNosPm3SFXWEjv4Vxlv65XS0sxwbOcaN")
 else:
     print("no file seletecd with -f \n uploading all files in folder filles if exsite")
     files = os.listdir(files_path)
     for file in files:
         print(os.path.join(files_path, file))
-        # upload_file(file, "1nNosPm3SFXWEjv4Vxlv65XS0sxwbOcaN")
+        upload_file(file, "1nNosPm3SFXWEjv4Vxlv65XS0sxwbOcaN")
 
 
