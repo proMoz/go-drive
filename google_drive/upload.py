@@ -7,9 +7,9 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 from apiclient.http import MediaFileUpload
 
-import auth
+from google_drive.auth import get_service_account_cred
 
-service = build( 'drive', 'v3', credentials=auth.get_service_account_cred() )
+service = build( 'drive', 'v3', credentials=get_service_account_cred() )
 
 def upload_file(file, parent_id, mimetype= "text/plain"):
     file_metadata = {
